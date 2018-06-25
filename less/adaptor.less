@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+//媒体查询，根据屏幕大小动态设置html的根字体大小
+
+.setFont(@value : 320px){
+  @media (min-width: @value) {
+    html{
+      font-size: @value / @design * @base;
+    }
+  }
+}
+
+//适配屏幕
+//320px 360px 375px 384px 400px 414px 424px 480px 540px 640px 720px 750px
+.setFont(320px);
+.setFont(360px);
+.setFont(375px);
+.setFont(384px);
+.setFont(414px);
+.setFont(424px);
+.setFont(480px);
+.setFont(540px);
+.setFont(640px);
+.setFont(720px);
+.setFont(750px);
